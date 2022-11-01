@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVT TP 1 Salinas</title>
+</head>
+<style>
+    html {
+        display:flex;
+        justify-content:center;
+    }
+
+    .listaP {
+        background-color: aquamarine;
+        border-radius: 1rem;
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
+    .nombre::marker{
+        color:hotpink;
+    }
+</style>
+<body>
+    <h1>Mis Familiares</h1>
+    <ul class='listaP'>
+    {% for familiar in familiares %}
+        <li class='nombre'>{{familiar.nombre}} {{familiar.apellido}}</li>
+        <ul>
+            <li>Genero: {{familiar.genero}}</li>
+            <li>Edad: {{familiar.edad}}</li>
+            <li>Fecha de nacimiento {{familiar.fecha_nacimiento}}</li>
+        </ul>
+    {% endfor %}
+</ul>
+</body>
+</html>

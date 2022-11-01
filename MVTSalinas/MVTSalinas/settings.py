@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MVTSalinas.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\Users\matil\Desktop\Mati\Coderhouse\Tp1MVT\MVTSalinas\MVTSalinas\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
